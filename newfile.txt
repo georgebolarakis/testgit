@@ -1,1 +1,2 @@
 Hi this is a text file
+And this is some text in our new branch
