@@ -82,6 +82,6 @@ def add(num1,num2):
 
 <!--TAsk lists-->
 
-* [x]Task 1
-* [x]Task 2
-* []Task 3 
+* [x] Task 1
+* [x] Task 2
+* [ ] Task 3 
