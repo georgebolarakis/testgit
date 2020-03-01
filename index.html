@@ -1,0 +1,188 @@
+<! DOCTYPE html>
+<html>
+    <head>
+    <title>HTML Cheat</title>
+    </head><!--makes city in div ,black background-->
+            <!--makes a tooltip div ,tooltip class-->
+     <style>
+        .cities {
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            }
+
+            .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+    </style>
+     
+    <body>
+        
+        <div class="cities">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <!--tooltip in action-->
+        <div>This is some text</div>
+
+        <div class ="tooltip"><a href="http://google.com" target="_blank">google</a>
+        <span class ="tooltiptext">This link will take you to google</span>
+         
+        </div>
+        <!--Heading-->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+        <!--Paragraphs-->
+        <p>
+        Random Text <strong>Random Text</strong> Random Text <em>Random Text</em> Random Text Random Text Random Text
+        Random Text
+        Random Text
+        Random Text
+        </p>
+        <p>
+        Random Text <a href="http://google.com" target="_blank"><!--The target attribute opens the link in a new tab-->
+        Link to Google </a>Random Text Random Text Random Text Random Text Random Text
+        Random Text
+        Random Text
+        Random Text
+        </p>
+        <!--unorderd Lists-->
+        <ul>
+           <li>List Item 1</li> 
+           <li>List Item 2</li> 
+           <li>List Item 3</li> 
+           <li>List Item 4</li> 
+        </ul>
+        <!--Ordered Lists-->
+        <ol>
+            <li>List Item 1</li> 
+           <li>List Item 2</li> 
+           <li>List Item 3</li> 
+           <li>List Item 4</li> 
+        </ol>
+        <!--Table-->
+        <table>
+        <thead><!--the head of the table-->
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody><!--The body of the table-->
+            <tr>
+                <td>Georgios</td>
+                <td>georgebolarakis@gmail.com</td>
+                <td>38</td>
+            </tr>
+             <tr>
+                <td>Ilectra</td>
+                <td>gilectra@gmail.com</td>
+                <td>34</td>
+            </tr>
+             <tr>
+                <td>Orestis</td>
+                <td>Orestis@gmail.com</td>
+                <td>34</td>
+            </tr>
+        </tbody>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <!--Forms-->
+        <form action="process.php" method-"POST">
+            <div>
+                <label>First Name</label>
+                <input type-"text" name="FirstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type-"text" name="LastNAme">
+            </div>
+            <br>
+            <div>
+                <label>Email </label>
+                <input type-"email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message">  </textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                    <select name="gender">  
+                        <option value="Male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                    <input type-"number" name="Age"  placeholder="39"> 
+            </div>
+             <br>
+            <div>
+                <label>Birthday:</label>
+                    <input type-"date" name="birthday"> 
+            </div>
+            <br>
+                <input  type="Submit" value="Submit" name="Submit">
+        </form>
+        <hr>
+        <!--Buttoon outside a form-->
+
+        <button>Click me</button>
+
+        <!--Image Tags-->
+        <a href="images/knowledge.jpg" target="_blank" >
+            <img src="images/knowledge.jpg" alt="My Sample Image" width="200">
+        </a>
+        
+
+        <!--Quotations-->
+        <blockquote cite="http://traversymedia.com">
+            Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random textRandom Text
+            Random Text Random Text
+            Random Text Random Text Random Text Random Text Random Text
+            Random TextRandom Text Random Text
+            Random Text Random Text
+        </blockquote>
+        <p>   The <abbr title="World Wide Web"> www </abbr>is awesome</p>
+        
+        <p>  <cite>HTML crash course</cite> by Brad</p>
+        <a href="blog.html">Go to blog</a>
+        
+        <div style="margin-top:500px"></div>
+    </body>
+</html>

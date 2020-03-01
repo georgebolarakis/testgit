@@ -1,0 +1,14 @@
+console.dir(document) //It shows you the content of the site.
+console.querySelector("h1") //chooses the h1 element in our HTML
+console.querySelector(h1).innerHTML="That was easy"//we update the content of the h1 element.for this instance of the web site.
+. is for a class  #is for an ID and tags don't have any prefix.
+
+FOR THE CONSOLE TO CHANGE THE SPECIFIC INSTANCE:
+WE ADD THE NAME OF THE VARIABLE OBJECT . AND
+innerText//as it suggests
+innerHTML//as it suggests
+textContent//and we update
+innerContent//for updating the content of an element
+getAttribute("class")//when you want to read the class value
+remove()//to remove that attribute
+to check if a class exists we console.log(i.classList.contains("first"));//where i is the element.
