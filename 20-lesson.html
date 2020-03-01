@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div> 1
+        <div> 2
+            <div> 3
+                <div>4
+                    <div>5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section></section>
+    <script>
+        const outputEl = document.querySelector("section");//we select the section element
+        const els = document.querySelectorAll("div");//we select all the div elements
+        for (let i = 0; i < els.length; i++) {//we loop through the element number
+            let el = els[i];//set up an el variable where we incriment i times
+            el.style.border = "1px solid red";//we reference the el object
+            el.style.width = "100px";//we give some styles
+            el.style.padding = "20px";
+            el.v = (i + 1);//we set up a value to the el object
+            el.addEventListener("click", capture, true);//the event is a click for the capture to 
+            //be true
+            el.addEventListener("click", bubble, false);//the event is a click for the bubble to 
+            //to be false
+        }
+
+        function output(msg) {//
+            outputEl.innerHTML += `${msg}<br>`;//it takes the output element and updates the 
+            //innerHTML with using a template literal the value of the variable msg content
+            //and we add a linebreak 
+        }
+
+        function bubble() {//
+            output('bubble:' + this.v);
+        }
+
+        function capture() {//we output the name capture of what is containded in this v
+            output('capture:' + this.v);
+        }
+    </script>
+</body>
+
+</html>

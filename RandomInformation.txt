@@ -1,0 +1,17 @@
+If we want to turn out JS code to older versions for compatibility
+reassons there is this site https://babeljs.io/.
+
+Web/JavaScript/Reference/Global_Objects/Array
+
+Method refers to a function inside an Object.
+
+const obj={"one" :1,"two":2}//You can change values but not assigh 
+the object value
+
+const array=[1,2,3,4,5];//you can reassign but not redeclare
+ the array value.
+
+TIP:const indicates that it should not change.
+
+Object is the a combination of variables, functions(refered as methods)
+, and data structures.
